@@ -72,7 +72,7 @@ function getTurma($curso)
 	return $retorno;
 }
 
-function cadastrarAluno($id_turma, $rm, $nome, $dt_nasc) {
+function cadastrarAluno($turma, $rm, $nome, $dt_nasc) {
 	//a senha inicial do aluno será seu RM
 	$sql='INSERT INTO aluno VALUES('.$rm.',"'.$nome.'","'.$dt_nasc.'","'.$rm.'",'.$turma.')';
 	$retorno = $GLOBALS['conexao']->query($sql);
@@ -82,4 +82,15 @@ function cadastrarAluno($id_turma, $rm, $nome, $dt_nasc) {
 	echo "Erro ao cadastrar: ".$GLOBALS['conexao']->error;
 	}
 }
+
+function getAlunos ($turma) {
+	$sql = 'SELECT a.rm, a.nome, a.dt_nasc, t.nome as turma FROM aluno a, turma t
+	WHERE t.cd = a.id_turma';
+	if($turma != null) {
+	$sql .= ' AND a.id_turma='.$turma;
+	}
+	$retorno = $GLOBALS['conexao']->query($sql);
+	return $retorno;
+	}
+
 ?>
