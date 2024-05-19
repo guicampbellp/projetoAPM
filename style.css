@@ -1,0 +1,409 @@
+* {
+    font-family: sans-serif, helvetica, arial;
+    margin: 0;
+}
+body {
+    color: white !important;
+    background: #FFFFFF url(imagens/fundo.jpg) no-repeat center center fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.form1{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#usuar, #sen {
+    padding: 20px 25px;
+    background: rgba(122, 122, 122, 0.534);
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    outline: 0;
+    border: none;
+}
+
+.login{
+    width: 550px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    margin: 10px 0px;
+    backdrop-filter: blur(15px);
+    display: inline-flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+}
+
+#botao {
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: none ;
+    background: rgb(0, 56, 83);
+    font-size: 20px;
+    color: white;
+}
+#botao:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    background:  rgb(0, 112, 168);
+
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 56, 83);
+    font-size: 21px !important;
+}
+/* menu.html */
+
+
+.wrapper .button {
+	
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 5px;
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: 10px 5px rgb(0 0 0 / 19%);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+}
+.wrapper .button:hover .icon{
+	color: #fff;
+}
+.wrapper .button:nth-child(1):hover .icon {
+	background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+	background: #1da1f2;
+}
+.wrapper .button:nth-child(3):hover .icon {
+	background: #e1306c;
+}
+.wrapper .button:nth-child(4):hover .icon {
+	background: #ff0000;
+}
+.wrapper .button:nth-child(5):hover .icon {
+	background: #05a354;
+}
+.wrapper .button:nth-child(6):hover .icon {
+	background: #caeb13;
+}
+
+.wrapper .button .icon {
+	display: inline-block;
+	width: 80px;
+	height: 100px;
+	border-radius: 50px;
+	line-height: 60px;
+	text-align: center;
+	transition: all 0.3s ease-out;
+}
+.wrapper .button .icon i {
+    display: flex;
+    margin: 25px 25px;
+	font-size: 25px;
+	line-height: 100px;
+    text-align: center;
+	transition: all 0.3s ease-out;
+}
+.wrapper .button span {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 50px;
+	margin-left: 25px;
+
+}
+.wrapper .button:hover {
+	width: 250px;
+}
+.wrapper .button:nth-child(1):hover span {
+	color: #4267b2;
+}
+.wrapper .button:nth-child(2):hover span {
+	color: #1da1f2;
+}
+.wrapper .button:nth-child(3):hover span {
+	color: #e1306c;
+}
+.wrapper .button:nth-child(4):hover span {
+	color: #ff0000;
+}
+.wrapper .button:nth-child(5):hover span {
+	color: #05a354;
+}
+.wrapper .button:nth-child(6):hover span {
+	color: #caeb13;
+}
+
+/* aluno.html */
+.paizao {
+    display: flex;
+}
+
+.tudo {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.importe {
+width: 300px;
+height: 500px;
+background: rgb(255, 255, 255);
+margin: 10px 0px;
+padding: 20px;
+backdrop-filter: blur(15px);
+display: inline-flex;
+justify-content: center;
+font-size: 16px;
+text-align: center;
+box-shadow: 10px 5px rgba(0, 0, 0, 0.192);
+border-radius: 10px;
+}
+
+#turma, #curso, #rm {
+padding: 20px 25px;
+background: rgba(122, 122, 122, 0.534);
+border-radius: 10px;
+border: none;
+margin: 10px 0px;
+display: inline-flex;
+justify-content: center;
+font-size: 10px;
+text-align: center;
+outline: 0;
+border: none;
+}
+
+input[type=file]{
+display: none;
+
+}
+.importe input[type=submit]{
+border-radius: 10px;
+border: none ;
+background: rgb(0, 56, 83);
+font-size: 20px;
+color: white;
+margin: 15px;
+padding: 15px;
+}
+
+.arquivo1{
+display: block;
+background: rgba(122, 122, 122, 0.534);
+padding: 10px 20px;
+border: 1px solid black;
+margin: 15px;
+border-radius: 10px;
+}
+
+.tabela {
+width: 600px;
+height: 300px;
+background: rgb(255, 255, 255);
+margin: 10px 10px;
+backdrop-filter: blur(15px);
+justify-content: center;
+font-size: 16px;
+text-align: center;
+box-shadow: 10px 5px rgba(0, 0, 0, 0.192);
+border-radius: 10px;
+display: inline-block;
+
+
+
+}
+
+#alunos {
+width: 600px;
+height: 300px;
+border: 1px solid black;
+background: rgb(255, 255, 255);
+text-align: center;
+border-spacing: 0px;
+
+
+}
+
+caption{     
+background: rgb(0, 56, 83);
+}
+
+tr td{
+    height: 10px;
+    width: 20px;
+font-size: 10px;
+color: black;
+border: 1px solid black;
+}
+.pesquisar form{
+    display: flex;
+}
+.curso1{
+    margin: 10px 10px;
+
+}
+.turma1{
+    margin: 10px 10px;
+
+}
+.botao2{
+        margin: 10px 10px;
+
+}
+#listar{
+    font-size: 16px;
+border:1px solid black;
+background: rgb(0, 56, 83);
+color: white;
+}
+#promover{
+    margin: 10px;
+    font-size: 16px;
+    border:1px solid black;
+    background: rgb(0, 56, 83);
+    color: white;
+    justify-content: center;
+    display: inline-flex;
+    text-align: center;
+    }
+
+    /* pedidos.html */
+    .tabela1 {
+        width: 800px;
+        height: 400px;
+        background: rgb(255, 255, 255);
+        margin: 10px 10px;
+        backdrop-filter: blur(15px);
+        justify-content: center;
+        font-size: 16px;
+        text-align: center;
+        box-shadow: 10px 5px rgba(0, 0, 0, 0.192);
+        border-radius: 10px;
+        display: inline-block;
+        border: 1px solid white;
+        
+        
+        }
+        
+        #pedidos {
+        width: 800px;
+        height: 400px;
+        border: 1px solid black;
+        background: rgb(255, 255, 255);
+        text-align: center;
+        border-spacing: 0px;
+        border: 1px solid white;
+        
+        }
+        .botaov{
+            background-color: #1b45bb;
+        }
+        .botaof{
+            background-color: #1a7234;
+        }
+        .botaox{
+            background-color: #bb481b;
+        }
+        .linha1{
+            font-size: 15px;
+            background-color: #30d6d63b;
+        }
+        tr{
+            height: 65px;
+        }
+
+.pai {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pai-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dadosp{
+    margin-right: auto;
+    padding-left: 50px;
+}
+
+
+.dadosUser{
+    background-color: white;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.trocar{
+display: inline-flex;
+    background: rgba(122, 122, 122, 0.534);
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 80px;
+    justify-content: center;
+}
+
+.trocarsenha
+    {
+    display: inline-flex;
+    }
+
+#trocarsenha{
+    background: rgba(122, 122, 122, 0.534);
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 10px; 
+    font-size: 14px;
+    width: 120px;
+    justify-content: center;
+}
+
+.pai-2 {
+    margin-top: 50px;
+}
+
+.mae {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.377);
+    backdrop-filter: blur(6px);
+}
+.filha{
+    background-color: #caeb13;
+    width: 400px;
+    height: 400px;
+    color: black;
+}

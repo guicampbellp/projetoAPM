@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<style>
+.filha {
+    background-color: rgb(0, 56, 83);
+    width: 800px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo {
+    background-color: rgb(0, 39, 58);
+    margin: 0;
+    color: white;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fechar {
+    cursor: pointer;
+    margin-right: 16px;
+    padding: 5px;
+    padding-bottom: 8px;
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.tio{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cadastro{
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cadastro div{
+    display: flex;
+    background-color: rgb(0, 39, 58);
+    padding: 4px 0px 4px 10px;
+    border-radius: 6px;
+    color: white;
+
+}
+
+.nome{
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.nome div{
+    display: flex;
+    background-color: rgb(0, 39, 58);
+    padding: 4px 0px 4px 10px;
+    border-radius: 6px;
+    color: white;
+
+}
+
+#caixatexto{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 50px 20px 0px 20px;
+
+}
+.botoes{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.botoes #confirmar{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: green;
+}
+
+.botoes #cancelar{
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: red;
+}
+input{
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+#nome{
+    width: 392px;
+}
+
+</style>
+    <title>Pedidos</title>
+</head>
+<body>
+<div id="mae" class="mae">
+    <div class="filha">
+        <div class="tio">
+            <div class="titulo">
+                <div>
+                    <p>Modal - Visualizar pedido</p>
+                </div>
+                <div class="fechar" onclick="fechar()">X</div>
+            </div>
+            
+            <div class="cadastro">
+                <div> #ID 
+                    <input type="text" name="" id="">
+                </div>
+                <div> #DATA 
+                    <input type="date" name="" id="">
+                </div>
+                <div> #TURMA 
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+            <div class="nome">
+                <div> #NOME
+                    <input type="text" name="" id="nome">
+                </div>
+                <div> #VALOR
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+            <textarea name="" id="caixatexto" cols="30" rows="10"></textarea>
+            <div class="botoes">
+                <div class="confirmar">
+                <input type="button" value="Confirmar pedido" id="confirmar">
+                </div> 
+                <div class="cancelar" onclick="fechar()">
+                    <input type="button"  value="Cancelar pedido" id="cancelar">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pai-one">
+    <div class="pesquisar">
+        <form action="pesquisar">
+            <div class="botao2">
+                <input type="button" value="Em aberto" name="curso" id="listar">
+            </div>
+            <div class="botao2">
+                <input type="button" value="Confirmados" name="turma" id="listar">
+            </div>
+            <div class="botao2">
+                <input type="button" value="Finalizados" name="listar" id="listar">
+            </div>
+        </form>
+    </div> 
+
+    <div class="tabela1">
+        <table id="pedidos">
+            <caption>
+                <H1>Pedidos encontrados</H1>
+            </caption>
+            <tr>
+                <td class="linha1">#id</td>
+                <td class="linha1">#data</td>
+                <td class="linha1">#nome</td>
+                <td class="linha1">#valor</td>
+                <td class="linha1">#desc</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><p><button onclick="abrir()" class="botaov">V</button> <button class="botaof">F</button> <button class="botaox">X</button> </p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
